@@ -39,7 +39,7 @@
 
 int main() {
     std::map<std::string, int> usrMap;
-    std::ifstream file("/Users/tinrupcic/Desktop/drugi.txt");
+    std::ifstream file("/Users/tinrupcic/Desktop/treci.txt");
     std::string usrName;
     int h = 0;
     int min = 0;
