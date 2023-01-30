@@ -26,3 +26,31 @@
 //
 //        prosjek: 35.17 godina
 //        Uputstva: koristite std::vector i samo standardne algoritme: copy, remove_if, transform, sort, accumulate.
+#include <iostream>
+#include <fstream>
+#include <iostream>
+#include <fstream>
+#include <map>
+#include <string>
+
+int main() {
+    std::map<std::string, int> usrMap;
+    std::ifstream file("/Users/tinrupcic/Desktop/treci.txt");
+    std::string pacijent;
+    int starost;
+    double visina;
+    double tezina;
+    char line;
+
+    while (file >> pacijent >> starost  >> visina >> tezina) {
+        std::cout << "";
+
+
+    }
+
+    for (const auto &[name, time]: usrMap) {
+        std::cout << name << " " << time / 60 << ":" << time % 60 << std::endl;
+    }
+
+    return 0;
+}

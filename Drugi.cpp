@@ -45,13 +45,8 @@ int main() {
     int min = 0;
     char line;
 
-    while (file >> usrName >> h >> line >> min) {
-        if (usrMap.count(usrName))
-            usrMap[usrName] += h * 60 + min;
-        else
-            usrMap[usrName] = h * 60 + min;
-
-    }
+    while (file >> usrName >> h >> line >> min)
+        usrMap[usrName] += h * 60 + min;
 
     for (const auto &[name, time]: usrMap) {
         std::cout << name << " " << time / 60 << ":" << time % 60 << std::endl;
