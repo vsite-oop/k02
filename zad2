@@ -1,0 +1,38 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+#include <map>
+
+using namespace std;
+
+
+
+int main()
+{
+    ifstream fin("zad2-data.txt");
+
+    string name;
+    int hours;
+    char delim;
+    int minutes;
+
+    map<string, int> mapa;
+
+    map<std::string, int>::iterator it = mapa.begin();
+
+    while (fin >> name >> hours >> delim >> minutes)
+    {
+
+        mapa[name] = hours*60 + minutes;
+        cout << name << " " << hours<< minutes << "\n";
+    }
+
+    while (it != mapa.end())
+    {
+        std::cout << "Key: " << it->first << ", Value: " << it->second << std::endl;
+        ++it;
+    }
+}
+
+
