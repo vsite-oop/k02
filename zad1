@@ -1,0 +1,24 @@
+#include <iostream>
+#include <algorithm>
+
+
+template <typename T, size_t size> class collection{
+private:
+	size_t size;
+	T* myarray;
+public:
+	collection(double num) {
+		myarray = new T[size];
+		for (int i = 0; i < size; ++i)
+			myarray[i] = num;
+	}
+
+};
+
+
+
+int main() {
+	collection<double, 16> c(2.5);
+	c[0] = c[15] = 3.5;
+	std::copy(c.begin(), c.end(), std::ostream_iterator<double>(std::cout, " "));
+}
