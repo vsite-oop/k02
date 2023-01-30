@@ -1,4 +1,4 @@
-﻿# VSITE OOP 2. kolokvij
+﻿o# VSITE OOP 2. kolokvij
 
 ### 1. zadatak (10 bodova)
 
@@ -89,3 +89,21 @@ prosjek: 35.17 godina
 ```
 
 Uputstva: koristite `std::vector` i samo standardne algoritme: `copy`, `remove_if`, `transform`, `sort`, `accumulate`.
+
+
+### Rješenja
+
+Primjer rješenja (u *branchu* solution):
+![commit](../../commit/9b61b76e59778db1310115ceb08ddef5e2b0256a)
+
+### Rezultati
+
+|                         | 1 | 2 | 3 | bod | ocjena | ukupno|
+| -----------             | - | - | - | --- | ------ |------ |
+| Luka Sabo               | 9 |13 |23 | 45  |   5    | **5** |
+| Ivor Novosel            | 9 | 0 |24 | 33  |   3    | **4** |
+| Matko Stojić            |10 | 0 |23 | 33  |   3    | **3** |
+| Tin Rupčić              | 0 |15 |   | 15  |        |       |
+| Deni Kiseljak           | 2 | 6 |   |  8  |        |       |
+| Filip Lončar            | 1 | 2 |   |  3  |        |       |
+
